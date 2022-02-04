@@ -45,3 +45,6 @@
     git add task1.1_GIT.txt 
     git commit -a -m "new task1.1_GIT.txt file"
     git push 
+
+My 50 words about Devops:
+I think this person one of most important people in the project. He takes over majority tasks various specifications, starting from helping development product and ending with control all programs, services and microsercvices of project. DevOps specialist must know a large number of technologies. Definitely, no one project can't function fully whithout him.
