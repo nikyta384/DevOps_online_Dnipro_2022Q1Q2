@@ -43,3 +43,7 @@ My claster included task with container.
 Static website.
 
 http://pavlovskyi-homework.pp.ua/
+
+S3 
+
+http://sitepavlovskyi.s3-website-us-east-1.amazonaws.com/
