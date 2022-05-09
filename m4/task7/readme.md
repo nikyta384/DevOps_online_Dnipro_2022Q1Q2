@@ -22,4 +22,26 @@
 
 ![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p10.png)
 
-7. Deleted table 
+7. Droped table 'lectures'.
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p11.png)
+
+8. Restored database.
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p12.png)
+
+9. Transfered database 'university' to my personal Amazon RDS instanse. 
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p13.png)
+
+10. Used SELECT operator.
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p14.png)
+
+11. Installed MongoDB.
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p17.png)
+
+12. Created MongoDB database, collection and filling document.
+
+![](https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2/blob/develop/m4/task7/p18-19-20.png)
