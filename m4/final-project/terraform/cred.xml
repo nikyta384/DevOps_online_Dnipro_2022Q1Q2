@@ -1,0 +1,35 @@
+<com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey plugin="ssh-credentials@1.13"> 
+  <scope>slave</scope> 
+  <id>slave</id> 
+  <description>slave</description> 
+  <username>ec2-user</username> 
+  <privateKeySource class="com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource"> 
+      <privateKey>-----BEGIN RSA PRIVATE KEY----- 
+MIIEpAIBAAKCAQEAlw9JqROg+fUpUa5e+fvA0Q5XVecSMPnhYvCqzVTAiVFdGAPj
+pvUG//mXi32m6rKdaWhLcs2CdD2Lex9o8zzk9InyQh6RoPxgxYAF6oNLWOHcL3Br
+q6DHXSR+SvWXFb82UdfKU5ij3wyAdUaQF38l/79NxLOkERcX2PQ47BQJsLmEZEMR
+8T6nEVgBETMHPcykLllycYAAPLtQ3aPPaXzwoyyN4xS5KmLOgrD6XVsPiNtfuZpj
+GrZHL+9Euwl+Zli4Rvha19Bp85H+VD90t+IR5pHUuSJ+ttt1/dnd6fHNEq3vjbLR
+du6zS6P+xlBEvCvO5vvFrddfY7kQHHFLW3S9MwIDAQABAoIBAQCMz0FYi+WIWpEz
+hJkf6R6pQPcEKir44FTKR5DPaes3lVJz6lww60KlJWGwM2Z+bBTzhradwxeRhzUX
+hgXshpzdniDmpVwWdms2bsoU+mIn7hGzXtXe3DY6iqP298roCJ931vDQz/4hEqRD
+rYzveiRPq2Gws8uB6sbeA3l0BpGp2yyv12FAd+OdaapirhRjkLACuN/unbNk8p4U
+UCZJsmBXIsVLYBiwq1sAjxRmJGo8+f4JAUOentNTupO7QMdrjZyyvKMsHDfT9ome
+m08RgAIm8wXB2KmzWZHRX8KuXNaRUzqFlH1JC5F1zk71lyXe2jGZ7dkKNA9n9cNu
+ZEiZjfDxAoGBAPZEo32BfS3eGKIQw0jpqe1D4PiBRbCcRj+C7QoWCEO/7qe2u8og
+U4pHHbHYSYBTstlBisPieBlIyUcWBhmm2aDxLd9yBR09Quh7yew3EI+1v2rYZfuv
+mVhnn1QzAozPtLA5Go/BdHkRJpyNORp2uCQlzHFZ/RmSJVz5K7tVpX4nAoGBAJ0H
+eimAxd+HFiMVfOFp0BzGCvD39OhExKzi8GNggr0XH9e/sHUB8lHV53V0OkPDhLAP
+YmHpoGOU1pc6gR+nLboCp0gpNbsw1JKPPxuc4/cT3EIl3sAcDgW0hyyd+Cf9ROD9
+WhUMT2owB/p1EsrelzFHXkSLt13/e8yqd9QAlfwVAoGAegcE4/m353R3zEZ2Hbj6
+5ICQB1M3Dw5AmNPtVOQZ8Eg4n44ie0ONYaVfh3Je6WGP66tYcTvUuuKgKcM1/pv4
+lpErY98Bvb1PXBeKtKuMX0l1siHMVuxqFa4y+uvTxaZeKDwDd1wqtJrVARnRQ9Wz
+5OV96mTmzzbloK4vB0KnIF0CgYEAjDJwzz05bSieixRUOqzOMeJfQmUfM4CyV+kF
+1rQEBe7vbyCl2tGyF35y+Fqc6oNVpBsYK3L6z+3C6aJCRpBsMvbLg5HHdylRoMhj
+/7NDlQUWUbid98cUfeOADEW9mXZ2WKnaE5C6FoRrmyGLdbTmKAkgEPLs8+92CHTq
+J02em0ECgYB9VlU5QVoJ0vB2QOCOJQUS0dAwRmANCDExdvAIguqPQJKHLkULbMJF
+s3blqT+RxkFrKSfPFb17a2vSUGMxPRCedsw+aJmeWCoLY/JbmuvIEXU6yui4OG1W
+uBF1UTK8DMhKRGq6Ns2aZ+/8+yNU246CjSlLZyC4QBUBDNMRiU8+QA==  
+-----END RSA PRIVATE KEY----- </privateKey> 
+  </privateKeySource> 
+</com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey>
