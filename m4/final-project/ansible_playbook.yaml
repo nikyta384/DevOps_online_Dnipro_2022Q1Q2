@@ -1,0 +1,19 @@
+
+---
+- name: Main ansible playbook
+  hosts: master
+  remote_user: ec2-user
+  tasks:
+    - name: copy cred files to master
+      copy:
+        src: /home/ubuntu/secrets/
+        dest: /home/ec2-user/secrets/
+        owner: ec2-user
+        mode: 0777
+    - name: "Execute commands"
+      shell: |
+        cd /home/ec2-user/secrets/
+        sudo chmod +x post_script_master.sh
+        ./post_script_master.sh
+        cd ..
+        sudo rm -rf secrets
