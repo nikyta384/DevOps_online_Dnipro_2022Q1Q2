@@ -37,7 +37,7 @@ file.close()
 
 os.system("eval 'ssh-agent' && ssh-add "+master_key)
 
-print("\n\nInput path of directory 'secrets' (creds for jenkins slave):")
+print("\n\nInput path of directory 'secrets/' (creds for jenkins slave):")
 
 cred_dir = str(input())
 
