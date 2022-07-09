@@ -11,6 +11,4 @@ sudo systemctl daemon-reload
 sudo systemctl start jenkins
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
-#mkdir /home/ec2-user/jenkins
-#chmod 777 /home/ec2-user/jenkins
-#wget localhost:8080/jnlpJars/jenkins-cli.jar
+sudo yum install git -y
