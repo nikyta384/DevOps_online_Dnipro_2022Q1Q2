@@ -15,7 +15,7 @@ pipeline {
 		script {
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
                 	sh """
-			   docker login -u nikyta384 -p ${dockerhubpwd}
+			   sudo docker login -u nikyta384 -p ${dockerhubpwd}
                 	   sudo docker build -t nikyta384/pavlovskyi-blog:${VERSION} .
                 	   sudo docker push
                 	   """
