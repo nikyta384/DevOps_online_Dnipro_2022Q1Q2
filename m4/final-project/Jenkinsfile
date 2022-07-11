@@ -28,6 +28,7 @@ pipeline {
                sudo docker pull nikyta384/pavlovskyi-blog:${VERSION}
                sudo docker run -p 80:5000 nikyta384/pavlovskyi-blog:${VERSION}
                 """
+                }
             }
         }
     }
