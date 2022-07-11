@@ -5,11 +5,11 @@ pipeline {
     }
 
     stages {
-	stage('Git checkout') {
-	   steps {
-		git([url: 'https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2.git', branch: 'develop'])
-	    }
-	}
+//	stage('Git checkout') {
+//	   steps {
+//		git([url: 'https://github.com/nikyta384/DevOps_online_Dnipro_2022Q1Q2.git', branch: 'develop'])
+//	    }
+//	}
         stage('Build Docker image') {
             steps {
 		script {
