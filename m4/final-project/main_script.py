@@ -4,9 +4,9 @@ import os
 import subprocess
 
 os.chdir('./terraform')
-print('----------------------------------------------\nterraform init-------------------------------')
+print('----------------------------------------------terraform init-------------------------------')
 os.system('terraform init')
-print('----------------------------------------------\nterraform apply------------------------------')
+print('----------------------------------------------terraform apply------------------------------')
 os.system('terraform apply -auto-approve')
 print('---------------------------------------------------------------------------------------------')
 print("\n\nEnter yes when instances will have status '2/2 checks passed'\n\n")
@@ -41,6 +41,8 @@ print("\n\nInput path of directory 'secrets/' (creds for jenkins slave):")
 
 cred_dir = str(input())
 
+print('------------------------------------------ANSIBLE PLAYBOOK------------------------------------')
+
 with open('ansible_playbook.yaml', 'r') as file1 :
   filedata = file1.read()
 
@@ -50,4 +52,15 @@ with open('ansible_playbook.yaml', 'w') as file2:
   file2.write(filedata)
 os.system("ansible-playbook ansible_playbook.yaml")
 
-print('---------------------------------------------\nINFRASTRUCTURE READY TO WORK------------------')
+
+with open('ansible_playbook.yaml', 'r') as file3 :
+  filedata2 = file3.read()
+
+xx = str('src: '+ cred_dir)
+
+filedata2 = filedata2.replace(xx, 'src: replacedir')
+
+with open('ansible_playbook.yaml', 'w') as file4:
+  file4.write(filedata2)
+
+print('---------------------------------------------INFRASTRUCTURE READY TO WORK------------------')
