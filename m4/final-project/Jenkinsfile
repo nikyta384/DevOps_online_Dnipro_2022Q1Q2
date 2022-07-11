@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'slave1'}
+    agent {label 'slave'}
     environment {
         VERSION = '0.2.0'
     }
