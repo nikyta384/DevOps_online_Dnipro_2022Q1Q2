@@ -1,6 +1,7 @@
 pipeline {
     agent {label 'slave'}
     environment {
+	LVERSION = '0.1.0'
         VERSION = '0.2.0'
     }
 
@@ -34,8 +35,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
+	       sudo docker stop $LVERSION || true
+	       sudo docker rm $LVERSION || true
                sudo docker pull nikyta384/pavlovskyi-blog:${VERSION}
-               sudo docker run -p 80:5000 nikyta384/pavlovskyi-blog:${VERSION}
+               sudo docker run --name $VERSION -d -p 80:5000 nikyta384/pavlovskyi-blog:${VERSION}
                 """
             }
         }
