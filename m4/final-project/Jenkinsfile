@@ -15,6 +15,7 @@ pipeline {
         stage('Build Docker image') {
             steps {
 		script {
+		   sh 'ls'
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
 		      dir('pavlovskyi-blog'){
                 	sh """
