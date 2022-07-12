@@ -6,7 +6,7 @@
   tasks:
     - name: copy cred files to master
       copy:
-        src: replacedir
+        src: /home/ubuntu/secrets/
         dest: /home/ec2-user/secrets/
         owner: ec2-user
         mode: 0777
