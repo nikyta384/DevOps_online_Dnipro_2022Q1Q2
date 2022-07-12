@@ -17,14 +17,12 @@ pipeline {
 		script {
 		   sh 'ls'
                     withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-		      dir('pavlovskyi-blog'){
+		      dir('m4/final-project/pavlovskyi-blog'){
                 	sh """
 			   ls
 			   pwd
 			   sudo docker login -u nikyta384 -p ${dockerhubpwd}
-			   """
-                	   app = docker.build('nikyta384/pavlovskyi-blog:${VERSION}')
-                	sh """
+			   sudo docker build -t nikyta384/pavlovskyi-blog:${VERSION} .
 			   sudo docker images    
 			   sudo docker push nikyta384/pavlovskyi-blog:${VERSION}
                 	   """
