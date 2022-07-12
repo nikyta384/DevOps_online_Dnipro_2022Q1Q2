@@ -1,8 +1,8 @@
 pipeline {
     agent {label 'slave'}
     environment {
-	LVERSION = '0.1.0'
-        VERSION = '0.2.0'
+	LVERSION = '0.2.0'
+        VERSION = '0.3.0'
     }
 
     stages {
